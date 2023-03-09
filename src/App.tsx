@@ -4,6 +4,7 @@ import About from './pages/About';
 import Dashboard from './pages/Dashboard';
 import NoMatch from './pages/NoMatch';
 import Layout from './components/common/Layout';
+import LoginWithMockAPI from './pages/LoginWithMockAPI';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<NoMatch />} />
       </Route>
+      <Route path="/login" element={<LoginWithMockAPI />} />
     </Routes>
   );
 };
